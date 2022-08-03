@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nyoda Kuy</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>NYODA-KUY</h1>
+            <ul>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <img src="assets/img/logo.png" alt="logo">
+            <p>Nyoda-Kuy<br>Segarkan dirimu dengan minuman yang segar.<br> Minuman bersoda yang dapat menygarkan harimu.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <article id="tentang">
+                <h2>Tentang Kami</h2>
+                <div class="col d-flex">
+                    <p>Nyoda-Kuy merupakan produk perpaduan antara minuman bersoda dengan sirup buah. Kemasan dari minuman ini menggunakan plastic ziplock dengan menggunakan sedotan. Nyoda-Kuy menawarkan pelanggannya dengan berbagai pilihan minuman soda. Melon+susu+sprite, blueberry+susu+sprite.</p>
+                    <p>Perusahaan ini berdiri pada tahun 2020 awal. Kami dibentuk karena melihat adanya peluang bisnis dibidang kuliner terutama bagian minuman. Mengapa kami fokus ke bagian minuman?? hal ini dikarenakan minuman menyegarkan adalah pilihan yang tepat untuk menjadi peluang bisnis.</p>
+                </div>
+            </article>
+            
+            <article id="produk" class="produk">
+                <h2>Produk</h2>
+                <div class="deskripsi">
+                    <img src="assets/img/produk.png" alt="produk">
+                    <p>Produk ini dihadirkan untuk memenuhi kebutuhan mahasiswa di sekitar Kampus Universitas Telkom. Mengapa hanya di sana?? karena, kita tau bahwa daerah kampus ini terkenal dengan cuaca yang sangat panas. Saat ini, kita hanya memiliki 2 jenis minuman:</p>
+                </div>
+                <div class="d-flex">
+                    <section class="jenis melon">
+                        <h3>Soda Melon</h3>
+                        <img src="assets/img/melon.png" alt="Soda Melon">
+                        <p>Sesuai dengan namanya, minuman ini memiliki rasa melon yang dominan.</p>
+                    </section>
+                    <section class="jenis jeruk">
+                        <h3>Soda Jeruk</h3>
+                        <img src="assets/img/jeruk.png" alt="Soda Jeruk">
+                        <p>Sesuai dengan namanya, minuman ini memiliki rasa jeruk yang dominan.</p>
+                    </section>
+                </div>
+            </article>
+            
+            <article id="testimoni" class="testimoni">
+                <h2>Testimoni</h2>
+                <h3>Apa kata para konsumen kita tentang produk Nyoda-Kuy??</h3>
+                <section class="komen">
+                    <h4>Pandu Adhi</h4>
+                    <p>Minuman ini enak banget sumpah dahh!!</p>
+                </section>
+                <section class="komen">
+                    <h4>Hafid Ikhsan</h4>
+                    <p>Jujur, ini soda jeruk tuh enak banget, kalian harus nyoba</p>
+                </section>
+                <section class="komen">
+                    <h4>Denisa Savira</h4>
+                    <p>Jujurly, ini enak banget, kalo favorit ku tuh yang rasa soda melon. Kalian harus coba yaa bestiee</p>
+                </section>
+            </article>
+            
+            <article id="kontak" class="kontak">
+                <h2>Kontak</h2>
+                <form action="" method="post" name="mesen">
+                    <table>
+                        <tr>
+                            <td><label for="name">Nama </label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="isian" type="text" id="name" placeholder="Masukkan Nama"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telp">No. Telepon </label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="isian" type="tel" id="telp" placeholder="Masukkan No. Telepon"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="jenis">Jenis Minuman</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="jeruk">Soda Jeruk</label></td>
+                            <td><input class="isian" type="number" name="jeruk" id="jmlJeruk" placeholder="Mau pesen berapa?"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="melon">Soda Melon</label></td>
+                            <td><input class="isian" type="number" name="melon" id="jmlMelon" placeholder="Mau pesen berapa?"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pesanan">Pemesanan</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="cara" id="pick">
+                                <label for="pick">Pick Up</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="cara" id="deliv">
+                                <label for="deliv">Delivery</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button class="isian" type="reset">Hapus Pesanan</button></td>
+                            <td><button class="isian" type="submit" onclick="return validateForm()">Pesan Sekarang!</button></td>
+                        </tr>
+                    </table>
+                </form>
+                <aside>
+                    <div class="profile card">
+                        <header>
+                            <h2>CEO PT. Nyoda Kuy Jaya</h2>
+                            <figure>
+                                <img src="assets/img/Mushlih.png" alt="Foto Pribadi">
+                            </figure>
+                        </header>
+                        <section>
+                            <table>
+                                <tr>
+                                    <th>Nama</th>
+                                    <td>Mushlih Nur Islam</td>
+                                </tr>
+                                <tr>
+                                    <th>Alamat</th>
+                                    <td>Jl. Rawadas II, Jakarta Timur</td>
+                                </tr>
+                                <tr>
+                                    <th>email</th>
+                                    <td>mushlih.nuris@gmail.com</td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
+                </aside>
+            </article>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2022, PT. Nyoda Kuy Jaya</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    
+</body>
+</html>
